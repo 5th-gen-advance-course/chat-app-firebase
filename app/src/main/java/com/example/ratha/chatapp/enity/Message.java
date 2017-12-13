@@ -14,10 +14,14 @@ public class Message {
     private Date date;
 
     public Message(){}
-    public Message(int id, int userId, String message, Date date) {
+
+    public Message(int id, int userId, String message) {
         this.id = id;
         this.userId = userId;
         this.message = message;
+    }
+    public Message(int id, int userId, String message, Date date) {
+        this(id,userId, message);
         this.date = date;
     }
 
